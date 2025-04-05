@@ -1,0 +1,28 @@
+---
+title: "Metadata PEC1 Ómicas"
+author: "Alvar Manjón"
+date: "2025-04-05"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Metadatos de la base de datos extraida
+
+Los metadatos del estudio son los siguientes:
+
+-   Fuente de los datos: El repositorio online Metabolomics Workbench
+-   ID del estudio dentro del repositorio: ST000910
+-   El ID del análisis dentro del repositorio: AN001480
+-   El resumen del análisis muestra el típo de análisis realizado: Cromatografía de gases con tiempo de vuelo, en modo de ión positivo
+-   Las unidades usadas es el contaje
+-   El nombre completo de la base de datos es la suma del estudio y el análisis: ST000910:AN001480
+-   La descripción del estudio señala el título del proyecto: Insights into the pathogenesis of myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) through metabolomic profiling of cerebrospinal fluid (part I)
+-   Los suejtos estudiados pertenecen a la especie: Homo sapiens
+
+```{r cars}
+#Comprobar los metadatos con este comando
+metadata(se)
+```
